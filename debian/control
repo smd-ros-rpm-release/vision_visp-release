@@ -1,0 +1,12 @@
+Source: ros-groovy-visp-tracker
+Section: misc
+Priority: extra
+Maintainer: Fabien Spindler <fabien.spindler@inria.fr>
+Build-Depends: debhelper (>= 7.0.50~), ros-groovy-catkin, ros-groovy-dynamic-reconfigure, ros-groovy-geometry-msgs, ros-groovy-message-generation, ros-groovy-nodelet, ros-groovy-roscpp, ros-groovy-rospy, ros-groovy-sensor-msgs, ros-groovy-std-msgs
+Homepage: http://ros.org/wiki/visp_tracker
+Standards-Version: 3.9.2
+
+Package: ros-groovy-visp-tracker
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-groovy-dynamic-reconfigure, ros-groovy-geometry-msgs, ros-groovy-message-generation, ros-groovy-message-runtime, ros-groovy-nodelet, ros-groovy-roscpp, ros-groovy-rospy, ros-groovy-sensor-msgs, ros-groovy-std-msgs
+Description: Wraps the ViSP moving edge tracker provided by the ViSP visual servoing library into a ROS package. This computer vision algorithm computes the pose (i.e. position and orientation) of an object in an image. It is fast enough to allow object online tracking using a camera.
