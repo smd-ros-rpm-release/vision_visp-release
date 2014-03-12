@@ -1,0 +1,13 @@
+ros-groovy-visp-tracker (0.7.0-0quantal) quantal; urgency=high
+
+  * Fix package.xml version number (set to current version, i.e. 0.6.0)
+  * [visp_tracker] Remove unused bullet dependency
+  * [visp_tracker] Remove useless call to setup.py
+  * Identify Fabien as the principal maintainer.
+  * [visp_tracker] CMakeLists.txt: update bag file URL (use new GitHub Release API).
+  * Merge visp_tracker as our subdirectory
+  * Contributors: Thomas Moulard
+
+ -- Fabien Spindler <fabien.spindler@inria.fr>  Tue, 11 Mar 2014 15:00:00 -0000
+
+
