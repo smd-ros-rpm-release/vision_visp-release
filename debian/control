@@ -1,0 +1,12 @@
+Source: ros-groovy-visp-camera-calibration
+Section: misc
+Priority: extra
+Maintainer: Fabien Spindler <Fabien.Spindler@inria.fr>
+Build-Depends: debhelper (>= 7.0.50~), ros-groovy-camera-calibration-parsers, ros-groovy-catkin, ros-groovy-geometry-msgs, ros-groovy-message-generation, ros-groovy-sensor-msgs, ros-groovy-std-msgs, ros-groovy-visp-bridge
+Homepage: http://ros.org/wiki/visp_camera_calibration
+Standards-Version: 3.9.2
+
+Package: ros-groovy-visp-camera-calibration
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-groovy-camera-calibration-parsers, ros-groovy-geometry-msgs, ros-groovy-message-generation, ros-groovy-message-runtime, ros-groovy-sensor-msgs, ros-groovy-std-msgs, ros-groovy-visp-bridge
+Description: visp_camera_calibration allows easy calibration of cameras using a customizable pattern and ViSP library.
