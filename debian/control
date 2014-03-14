@@ -1,0 +1,12 @@
+Source: ros-hydro-visp-camera-calibration
+Section: misc
+Priority: extra
+Maintainer: Fabien Spindler <Fabien.Spindler@inria.fr>
+Build-Depends: debhelper (>= 7.0.50~), ros-hydro-camera-calibration-parsers, ros-hydro-catkin, ros-hydro-geometry-msgs, ros-hydro-message-generation, ros-hydro-roscpp, ros-hydro-sensor-msgs, ros-hydro-std-msgs, ros-hydro-visp, ros-hydro-visp-bridge
+Homepage: http://ros.org/wiki/visp_camera_calibration
+Standards-Version: 3.9.2
+
+Package: ros-hydro-visp-camera-calibration
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-hydro-camera-calibration-parsers, ros-hydro-geometry-msgs, ros-hydro-message-generation, ros-hydro-message-runtime, ros-hydro-roscpp, ros-hydro-sensor-msgs, ros-hydro-std-msgs, ros-hydro-visp, ros-hydro-visp-bridge
+Description: visp_camera_calibration allows easy calibration of cameras using a customizable pattern and ViSP library.
