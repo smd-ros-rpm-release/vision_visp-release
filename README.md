@@ -1,64 +1,32 @@
-# visp_tracker
+# ViSP stack for ROS
 
-visp_tracker wraps the ViSP moving edge tracker provided by the ViSP
-visual servoing library into a ROS package.
+[![Build Status](https://travis-ci.org/laas/vision_visp.png?branch=master)](https://travis-ci.org/laas/vision_visp)
 
-This computer vision algorithm computes the pose (i.e. position and
-orientation) of an object in an image. It is fast enough to allow
-object online tracking using a camera.
-
-
-This package is composed of one node called 'tracker' and two
-additional binaries 'client' and 'viewer'.
-
-The node tries to track the object as fast as possible but needs to be
-initialized using the client. The viewer can be used to monitor the
-tracking result.
-
-* [Project webpage on ros.org: tutorial and API reference] [ros-homepage]
-* [Project webpage: source code download, bug report] [github-homepage]
-
+This repository provides a ViSP stack for ROS. [ViSP] [visp] is the
+Visual Servoing Platform and [ROS] [ros] a robotics middleware.
 
 ## Setup
 
-This package can be compiled like any other catkin package using `catkin_make`. In that case you have to consider the `groovy-devel` branch.
-
-### Prerequisities
-
-First you need to install ViSP as a system dependency. This can be achived using
- `ros-groovy-visp` package for Ubuntu. Just run:
-
-	$ sudo apt-get install ros-groovy-visp
-
-If the package is not available (this is for example the case for Fedora) or if you want to use a more recent version of ViSP, you can also install ViSP from source:
-
-	$ cd ~
-	$ svn checkout svn://scm.gforge.inria.fr/svn/visp/trunk/ViSP
-	$ cd ViSP
-	$ cmake -DBUILD_SHARED_LIBS=ON .
-	$ make -j8
-
-Then to use this version you have to setup `VISP_DIR` environment variable to the folder that contains the build. In ou case it becomes:
-
-	$ export VISP_DIR=~/ViSP
-
-### How to get and build visp_tracker 
+This package contains submodules. It can be compiled like any other ROS package using `catkin_make`. In that case you have to consider the `groovy-devel` branch.
 
 Supposed you have a catkin work space just run:
 
 	$ cd ~/catkin_ws/src 
-	$ git clone -b groovy-devel https://github.com/lagadic/visp_tracker.git
+	$ git clone -b groovy-devel --recursive https://github.com/lagadic/vision_visp.git
 	$ cd ..
-	$ catkin_make --pkg visp_tracker
+	$ catkin_make 
+
+If you want to build a specific package (like visp_bridge) run either:
+
+	$ catkin_make --pkg visp_bridge
+
 
 ## Documentation
 
 The documentation is available on the project [ROS homepage]
 [ros-homepage].
 
-For more information, refer to the [ROS tutorial]
-[ros-tutorial-building-pkg].
-
-[github-homepage]: https://github.com/laas/visp_tracker
-[ros-homepage]: http://www.ros.org/wiki/visp_tracker
-[ros-tutorial-building-pkg]: http://www.ros.org/wiki/ROS/Tutorials/BuildingPackages "Building a ROS Package"
+[github-homepage]: https://github.com/lagadic/vision_visp
+[ros-homepage]: http://www.ros.org/wiki/vision_visp
+[visp]: http://team.inria.fr/lagadic/visp/visp.html
+[ros]: http://www.ros.org
