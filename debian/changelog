@@ -1,0 +1,22 @@
+ros-indigo-visp-auto-tracker (0.7.2-0saucy) saucy; urgency=high
+
+  * Fix various dependency issues in the CMakeLists.txt and package.xml files
+  * lipstick
+    
+    Aesthetic changes
+  * [visp_auto_tracker] Add missing dependency
+  * Add missing dependency to ViSP
+  * Fix errors detected with catkin_lint
+  * Contributors: Fabien Spindler, Thomas Moulard
+
+ -- Fabien Spindler <Fabien.Spindler@inria.fr>  Sun, 06 Apr 2014 22:00:00 -0000
+
+ros-indigo-visp-auto-tracker (0.7.0-0saucy) saucy; urgency=high
+
+  * Add flashcode_mbt as subdirectory.
+  * Merge visp_auto_tracker as our subdirectory
+  * Contributors: Thomas Moulard
+
+ -- Fabien Spindler <Fabien.Spindler@inria.fr>  Tue, 11 Mar 2014 23:00:00 -0000
+
+
