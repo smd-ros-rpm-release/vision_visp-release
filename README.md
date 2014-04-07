@@ -1,57 +1,59 @@
-# ViSP stack for ROS
+# visp_auto_tracker
 
-[![Build Status](https://travis-ci.org/lagadic/vision_visp.png?branch=indigo-devel)](https://travis-ci.org/lagadic/vision_visp)
 
-This repository provides a ViSP stack for ROS. [ViSP] [visp] is the
-Visual Servoing Platform and [ROS] [ros] a robotics middleware.
+visp_auto_tracker wraps model-based trackers provided by ViSP visual 
+servoing library into a ROS package. The tracked object should have a 
+QRcode of Flash code pattern. Based on the pattern, the object is 
+automaticaly detected. The detection allows then to initialise the 
+model-based trackers. When lost of tracking achieves a new detection 
+is performed that will be used to re-initialize the tracker.
+
+This computer vision algorithm computes the pose (i.e. position and
+orientation) of an object in an image. It is fast enough to allow
+object online tracking using a camera.
+
+This package is composed of one node called 'visp_auto_tracker'. The 
+node tries first to detect the QRcode or the Flash code associated to 
+the object. Once the detection is performed, the node tracks the object. 
+When a lost of tracking occurs the node tries to detect once again the 
+object and then restart a tracking.
+
+The viewer comming with visp_tracker package can be used to monitor the 
+tracking result.
+
+* [Project webpage on ros.org: tutorial and API reference] [ros-homepage]
+* [Project webpage: source code download, bug report] [github-homepage]
+
 
 ## Setup
 
-This package can be compiled like any other ROS package using `catkin_make`. In that case you have to consider the `indigo-devel` branch.
+This package contains submodules. It can be compiled like any other ROS package using `catkin_make`. In that case you have to consider the `hydro-devel` branch.
 
 ### Prerequisities
 
-1/ First you need to install ViSP as a system dependency. This can be achived using `ros-indigo-visp` package available for Ubuntu. Just run:
+visp_auto_tracker depends on visp_bridge and visp_tracker packages available from <https://github.com/lagadic> (hydro-devel branches). Install first visp_bridge and visp_tracker packages.
 
-	$ sudo apt-get install ros-indigo-visp
-
-If the package is not available (this is for example the case for Fedora) or if you want to use a more recent version of ViSP, you can also install ViSP from source:
-
-	$ cd ~
-	$ svn checkout svn://scm.gforge.inria.fr/svn/visp/trunk/ViSP
-	$ cd ViSP
-	$ cmake -DBUILD_SHARED_LIBS=ON .
-	$ make -j8
-
-Then to use this version of ViSP build from source you have to setup `VISP_DIR` environment variable to the folder that contains the build. In our case it becomes:
-
-	$ export VISP_DIR=~/ViSP
-
-2/ vision_visp stack contains visp_auto_tracker package that depends on libdmtx-dev and libzbar-dev system dependencies. To install them run:
+visp_auto_tracker depends also on libdmtx-dev and libzbar-dev system dependencies. To install them run:
 
 	$ sudo apt-get install libdmtx-dev libzbar-dev
 
+### How to get and build visp_tracker 
 
-### How to get and build vision_visp 
-
-Supposed you have a catkin work space, if you want to build all the packages just run:
+Supposed you have a catkin work space just run:
 
 	$ cd ~/catkin_ws/src 
-	$ git clone -b indigo-devel https://github.com/lagadic/vision_visp.git
+	$ git clone -b hydro-devel --recursive https://github.com/lagadic/visp_auto_tracker.git
 	$ cd ..
-	$ catkin_make -DCMAKE_BUILD_TYPE=Release
-
-If you want to build a specific package (like visp_bridge) run either:
-
-	$ catkin_make -DCMAKE_BUILD_TYPE=Release --pkg visp_bridge
-
+	$ catkin_make --pkg visp_auto_tracker
 
 ## Documentation
 
 The documentation is available on the project [ROS homepage]
 [ros-homepage].
 
-[github-homepage]: https://github.com/lagadic/vision_visp
-[ros-homepage]: http://www.ros.org/wiki/vision_visp
-[visp]: http://team.inria.fr/lagadic/visp/visp.html
-[ros]: http://www.ros.org
+For more information, refer to the [ROS tutorial]
+[ros-tutorial-building-pkg].
+
+[github-homepage]: https://github.com/lagadic/visp_auto_tracker
+[ros-homepage]: http://www.ros.org/wiki/visp_auto_tracker
+[ros-tutorial-building-pkg]: http://www.ros.org/wiki/ROS/Tutorials/BuildingPackages "Building a ROS Package"
