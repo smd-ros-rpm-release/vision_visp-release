@@ -1,3 +1,28 @@
+## vision_visp (groovy) - 0.7.3-0
+
+User `fspindle@meteosat` released the packages in the `vision_visp` repository into the `groovy` distro by running `/usr/bin/bloom-release vision_visp --track groovy --rosdistro groovy` on `Fri, 11 Apr 2014 14:38:16 -0000`
+
+These packages were released:
+- `vision_visp`
+- `visp_auto_tracker`
+- `visp_bridge`
+- `visp_camera_calibration`
+- `visp_hand2eye_calibration`
+- `visp_tracker`
+
+Version of package(s) in repository `vision_visp`:
+- rosdistro version: `0.7.2-1`
+- old version: `0.7.2-1`
+- new version: `0.7.3-0`
+
+Versions of tools used:
+- bloom version: `0.5.2`
+- catkin_pkg version: `0.1.28`
+- rosdep version: `0.10.25`
+- rosdistro version: `0.3.4`
+- vcstools version: `0.1.33`
+
+
 ## vision_visp (indigo) - 0.7.2-0
 
 User `fspindle@meteosat` released the packages in the `vision_visp` repository into the `indigo` distro by running `/usr/bin/bloom-release vision_visp --track indigo --rosdistro indigo --edit` on `Mon, 07 Apr 2014 16:41:07 -0000`
