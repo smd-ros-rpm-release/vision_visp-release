@@ -1,0 +1,30 @@
+ros-hydro-vision-visp (0.7.3-1raring) raring; urgency=high
+
+  * hydro-0.7.2
+  * Contributors: Thomas Moulard
+
+ -- Fabien Spindler <fabien.spindler@inria.fr>  Wed, 09 Apr 2014 22:00:00 -0000
+
+ros-hydro-vision-visp (0.7.2-1raring) raring; urgency=high
+
+  * hydro-0.7.1
+  * Prepare changelogs
+  * Contributors: Thomas Moulard
+
+ -- Fabien Spindler <fabien.spindler@inria.fr>  Thu, 13 Mar 2014 23:00:00 -0000
+
+ros-hydro-vision-visp (0.7.1-1raring) raring; urgency=high
+
+  * hydro-0.7.0
+  * Run catkin_generate_changelog, catkin_tag_changelog, bump version to 0.6.0
+  * Contributors: Thomas Moulard
+
+ -- Fabien Spindler <fabien.spindler@inria.fr>  Wed, 12 Mar 2014 23:00:00 -0000
+
+ros-hydro-vision-visp (0.7.0-1raring) raring; urgency=high
+
+
+
+ -- Fabien Spindler <fabien.spindler@inria.fr>  Tue, 11 Mar 2014 23:00:00 -0000
+
+
