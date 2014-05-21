@@ -1,3 +1,28 @@
+## vision_visp (hydro) - 0.7.3-1
+
+The packages in the `vision_visp` repository were released into the `hydro` distro by running `/usr/bin/bloom-release vision_visp --track hydro --rosdistro hydro` on `Wed, 21 May 2014 16:02:23 -0000`
+
+These packages were released:
+- `vision_visp`
+- `visp_auto_tracker`
+- `visp_bridge`
+- `visp_camera_calibration`
+- `visp_hand2eye_calibration`
+- `visp_tracker`
+
+Version of package(s) in repository `vision_visp`:
+- rosdistro version: `0.7.3-0`
+- old version: `0.7.3-0`
+- new version: `0.7.3-1`
+
+Versions of tools used:
+- bloom version: `0.5.8`
+- catkin_pkg version: `0.2.2`
+- rosdep version: `0.10.27`
+- rosdistro version: `0.3.5`
+- vcstools version: `0.1.35`
+
+
 ## vision_visp (indigo) - 0.7.3-0
 
 User `fspindle@meteosat` released the packages in the `vision_visp` repository into the `indigo` distro by running `/usr/bin/bloom-release vision_visp --track indigo --rosdistro indigo` on `Fri, 11 Apr 2014 14:55:03 -0000`
