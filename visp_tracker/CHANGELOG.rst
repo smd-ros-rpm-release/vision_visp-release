@@ -2,33 +2,38 @@
 Changelog for package visp_tracker
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-0.7.4 (2014-07-03)
+0.7.0 (2014-03-12)
 ------------------
-* Update and fix content of README files
-* Contributors: Fabien Spindler
 
-0.7.3 (2014-04-10)
+0.7.1 (2014-03-13)
 ------------------
-* Prepare changelogs
-* Contributors: Fabien Spindler
+* Fix errors detected with catkin_lint
+* hydro-0.7.0
+* Run catkin_generate_changelog, catkin_tag_changelog, bump version to 0.6.0
+* Contributors: Fabien Spindler, Thomas Moulard
 
-0.7.2 (2014-04-07)
+0.7.2 (2014-03-14)
 ------------------
-* Remove bullet usage and dependency by using ViSP instead. This was done to avoid errors when releasing vision_visp on oneiric/groovy where bullet is not packaged.
-* Reorganize launch files and fix since viewer and client nodes where renamed due to catkin_lint errors
+* Merge branch 'hydro-devel' into hydro
 * Fix various dependency issues in the CMakeLists.txt and package.xml files
 * Use Boost Filesystem V3.
 * [visp_tracker] package.xml: add back Bullet dependency
+* Merge branch 'hydro-devel' into hydro
 * Add missing dependency to ViSP
-* Fix errors detected with catkin_lint
+* hydro-0.7.1
+* Prepare changelogs
 * Contributors: Benjamin Chrétien, Fabien Spindler, Thomas Moulard
 
-0.7.0 (2014-03-12)
+0.7.3 (2014-04-10)
 ------------------
-* visp_tracker/package.xml: swithc license to GPLv2 to match the other packages.
-* Remove useless call to setup.py
-* Identify Fabien as the principal maintainer.
-* CMakeLists.txt: update bag file URL (use new GitHub Release API).
-* Merge visp_tracker as our subdirectory
-* Contributors: Thomas Moulard
+* hydro-0.7.2
+* Prepare changelogs
+* Reorganize launch files and fix since viewer and client nodes where renamed due to catkin_lint errors
+* Contributors: Fabien Spindler
+
+0.7.4 (2014-07-03)
+------------------
+* Update and fix content of README files
+* Prepare changelogs
+* Contributors: Fabien Spindler
 
