@@ -1,19 +1,19 @@
 # ViSP stack for ROS
 
-[![Build Status](https://travis-ci.org/lagadic/vision_visp.png?branch=indigo-devel)](https://travis-ci.org/lagadic/vision_visp)
+[![Build Status](https://travis-ci.org/lagadic/vision_visp.png?branch=hydro-devel)](https://travis-ci.org/lagadic/vision_visp)
 
 This repository provides a ViSP stack for ROS. [ViSP] [visp] is the
 Visual Servoing Platform and [ROS] [ros] a robotics middleware.
 
 ## Setup
 
-This package can be compiled like any other ROS package using `catkin_make`. In that case you have to consider the `indigo-devel` branch.
+This package contains submodules. It can be compiled like any other ROS package using `catkin_make`. In that case you have to consider the `hydro-devel` branch.
 
 ### Prerequisities
 
-1/ First you need to install ViSP as a system dependency. This can be achived using `ros-indigo-visp` package available for Ubuntu. Just run:
+1/ First you need to install ViSP as a system dependency. This can be achived using `ros-hydro-visp` package available for Ubuntu. Just run:
 
-	$ sudo apt-get install ros-indigo-visp
+	$ sudo apt-get install ros-hydro-visp
 
 If the package is not available (this is for example the case for Fedora) or if you want to use a more recent version of ViSP, you can also install ViSP from source:
 
@@ -37,13 +37,13 @@ Then to use this version of ViSP build from source you have to setup `VISP_DIR` 
 Supposed you have a catkin work space, if you want to build all the packages just run:
 
 	$ cd ~/catkin_ws/src 
-	$ git clone -b indigo-devel https://github.com/lagadic/vision_visp.git
+	$ git clone -b hydro-devel --recursive https://github.com/lagadic/vision_visp.git
 	$ cd ..
-	$ catkin_make -DCMAKE_BUILD_TYPE=Release
+	$ catkin_make 
 
 If you want to build a specific package (like visp_bridge) run either:
 
-	$ catkin_make -DCMAKE_BUILD_TYPE=Release --pkg visp_bridge
+	$ catkin_make --pkg visp_bridge
 
 
 ## Documentation
