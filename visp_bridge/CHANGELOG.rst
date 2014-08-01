@@ -2,43 +2,14 @@
 Changelog for package visp_bridge
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-0.7.0 (2014-03-12)
+0.7.5 (2014-08-01)
 ------------------
-
-0.7.1 (2014-03-13)
-------------------
-* Fix errors detected with catkin_lint
-* hydro-0.7.0
-* Run catkin_generate_changelog, catkin_tag_changelog, bump version to 0.6.0
-* Contributors: Fabien Spindler, Thomas Moulard
-
-0.7.2 (2014-03-14)
-------------------
-* Fix various dependency issues in the CMakeLists.txt and package.xml files
-* Merge branch 'hydro-devel' into hydro
-* Add missing dependency to ViSP
-* hydro-0.7.1
+* Revert previous commit that breaks compat
+* 0.7.4
 * Prepare changelogs
-* Fix errors detected with catkin_lint
-* hydro-0.7.0
-* Run catkin_generate_changelog, catkin_tag_changelog, bump version to 0.6.0
-* Contributors: Fabien Spindler, Thomas Moulard
+* Contributors: Fabien Spindler
 
-0.7.3 (2014-04-10)
-------------------
-* hydro-0.7.2
-* Prepare changelogs
-* Fix various dependency issues in the CMakeLists.txt and package.xml files
-* Merge branch 'hydro-devel' into hydro
-* Add missing dependency to ViSP
-* hydro-0.7.1
-* Prepare changelogs
-* Fix errors detected with catkin_lint
-* hydro-0.7.0
-* Run catkin_generate_changelog, catkin_tag_changelog, bump version to 0.6.0
-* Contributors: Fabien Spindler, Thomas Moulard
-
-0.7.4 (2014-07-03)
+0.7.4 (2014-07-02)
 ------------------
 * Update and fix content of README files
 * Revised with comments from fspindle
@@ -49,14 +20,36 @@ Changelog for package visp_bridge
 * Support for distortion camera parameter model
 * Delete existing output file
 * tool for converting visp camera parameter files to/from ros camera  parameter files
+* 0.7.3
 * Prepare changelogs
 * Contributors: Fabien Spindler, Riccardo Spica
 
-0.7.5 (2014-08-01)
+0.7.3 (2014-04-11)
 ------------------
-* Revert previous commit that breaks compat
-* hydro-0.7.4
+* groovy-0.7.2
 * Prepare changelogs
 * Contributors: Fabien Spindler
 
+0.7.2 (2014-03-25)
+------------------
+* Fix various dependency issues in the CMakeLists.txt and package.xml files
+* Merge branch 'groovy-devel' into groovy
+* Add missing dependency to ViSP
+* groovy-0.7.1
+* Prepare changelogs
+* Contributors: Fabien Spindler, Thomas Moulard
 
+0.7.1 (2014-03-13)
+------------------
+* Fix errors detected with catkin_lint
+* groovy-0.7.0
+* Run catkin_generate_changelog, catkin_tag_changelog, bump version to 0.7.0
+* Fix package.xml version number (set to current version, i.e. 0.6.0)
+* Merge visp_bridge as our subdirectory
+* Contributors: Fabien Spindler, Thomas Moulard
+
+0.7.0 (2014-03-12)
+------------------
+* Fix package.xml version number (set to current version, i.e. 0.6.0)
+* Merge visp_bridge as our subdirectory
+* Contributors: Thomas Moulard

@@ -4,47 +4,50 @@ Changelog for package visp_auto_tracker
 
 0.7.5 (2014-08-01)
 ------------------
-* hydro-0.7.4
+* 0.7.4
 * Prepare changelogs
 * Contributors: Fabien Spindler
 
-0.7.4 (2014-07-03)
+0.7.4 (2014-07-02)
 ------------------
 * Update and fix content of README files
-* Fixed bag dowload in tracker
+* Download the tutorial-qrcode.bag bag file from a new location that allows the download without SSL certificate
+* 0.7.3
 * Prepare changelogs
-* Contributors: Fabien Spindler, Riccardo Spica
-
-0.7.3 (2014-04-10)
-------------------
-* Fix to install model folder
-* hydro-0.7.2
 * Contributors: Fabien Spindler
 
-0.7.2 (2014-03-14)
+0.7.3 (2014-04-11)
 ------------------
-* Merge branch 'hydro-devel' into hydro
+* Install visp_auto_tracker/models folder
+* groovy-0.7.2
+* Prepare changelogs
+* Contributors: Fabien Spindler
+
+0.7.2 (2014-03-25)
+------------------
+* Merge branch 'groovy-devel' into groovy
 * Fix various dependency issues in the CMakeLists.txt and package.xml files
-* Merge branch 'hydro-devel' into hydro
+* Merge branch 'groovy-devel' into groovy
 * :lipstick: Aesthetic changes
 * [visp_auto_tracker] Add missing dependency
 * Add missing dependency to ViSP
-* hydro-0.7.1
+* groovy-0.7.1
 * Prepare changelogs
-* Fix errors detected with catkin_lint
-* hydro-0.7.0
-* Run catkin_generate_changelog, catkin_tag_changelog, bump version to 0.6.0
 * Contributors: Fabien Spindler, Thomas Moulard
 
 0.7.1 (2014-03-13)
 ------------------
 * Fix errors detected with catkin_lint
-* hydro-0.7.0
-* Run catkin_generate_changelog, catkin_tag_changelog, bump version to 0.6.0
+* groovy-0.7.0
+* Run catkin_generate_changelog, catkin_tag_changelog, bump version to 0.7.0
+* Fix package.xml version number (set to current version, i.e. 0.6.0)
+* [visp_auto_tracker] Add flashcode_mbt as subdirectory.
+* Merge visp_auto_tracker as our subdirectory
 * Contributors: Fabien Spindler, Thomas Moulard
 
 0.7.0 (2014-03-12)
 ------------------
-
-
-
+* Fix package.xml version number (set to current version, i.e. 0.6.0)
+* [visp_auto_tracker] Add flashcode_mbt as subdirectory.
+* Merge visp_auto_tracker as our subdirectory
+* Contributors: Thomas Moulard

@@ -8,19 +8,18 @@ This package can be compiled like any other catkin package using `catkin_make`.
 
 ### Prerequisities
 
-visp_hand2eye_calibration depends on visp_bridge package available from <https://github.com/lagadic/vision_visp> (hydro-devel branch). 
+visp_hand2eye_calibration depends on visp_bridge package available from <https://github.com/lagadic/vision_visp> (groovy-devel branch). Install first visp_bridge package.
 
 ### How to get and build visp_camera_calibration
 
 Supposed you have a catkin work space just run:
 
 	$ cd ~/catkin_ws/src 
-	$ git clone -b hydro-devel https://github.com/lagadic/vision_visp.git
+	$ git clone -b groovy-devel https://github.com/lagadic/vision_visp.git
 	$ cd ..
 	$ catkin_make --pkg visp_hand2eye_calibration
 
-Documentation
--------------
+## Documentation
 
 * [Project webpage on ros.org] [ros-homepage]
 * [Project webpage: source code download, bug report] [github-homepage]
