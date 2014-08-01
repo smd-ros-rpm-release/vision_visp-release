@@ -1,0 +1,48 @@
+ros-indigo-visp-auto-tracker (0.7.5-0saucy) saucy; urgency=high
+
+  * indigo-0.7.4
+  * Prepare changelogs
+  * Contributors: Fabien Spindler
+
+ -- Fabien Spindler <Fabien.Spindler@inria.fr>  Thu, 31 Jul 2014 22:00:00 -0000
+
+ros-indigo-visp-auto-tracker (0.7.4-0saucy) saucy; urgency=high
+
+  * Update and fix content of README files
+  * Download the tutorial-qrcode.bag bag file from a new location that allows the download without SSL certificate
+  * Prepare changelogs
+  * Contributors: Fabien Spindler
+
+ -- Fabien Spindler <Fabien.Spindler@inria.fr>  Wed, 02 Jul 2014 22:00:00 -0000
+
+ros-indigo-visp-auto-tracker (0.7.3-0saucy) saucy; urgency=high
+
+  * Fix to install models folder
+  * indigo-0.7.2
+  * Prepare changelogs
+  * Contributors: Fabien Spindler
+
+ -- Fabien Spindler <Fabien.Spindler@inria.fr>  Wed, 09 Apr 2014 22:00:00 -0000
+
+ros-indigo-visp-auto-tracker (0.7.2-0saucy) saucy; urgency=high
+
+  * Fix various dependency issues in the CMakeLists.txt and package.xml files
+  * lipstick
+    
+    Aesthetic changes
+  * [visp_auto_tracker] Add missing dependency
+  * Add missing dependency to ViSP
+  * Fix errors detected with catkin_lint
+  * Contributors: Fabien Spindler, Thomas Moulard
+
+ -- Fabien Spindler <Fabien.Spindler@inria.fr>  Sun, 06 Apr 2014 22:00:00 -0000
+
+ros-indigo-visp-auto-tracker (0.7.0-0saucy) saucy; urgency=high
+
+  * Add flashcode_mbt as subdirectory.
+  * Merge visp_auto_tracker as our subdirectory
+  * Contributors: Thomas Moulard
+
+ -- Fabien Spindler <Fabien.Spindler@inria.fr>  Tue, 11 Mar 2014 23:00:00 -0000
+
+
